@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Class Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <div class="location">
+          <i class="fas fa-school"></i>
+          <span>ABC University</span>
+        </div>
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search courses..." />
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <h2>Welcome to Your Class Portal</h2>
+          <p>Access your courses and track your progress</p>
+        </section>
+
+        <section class="categories">
+          <h3>Subjects</h3>
+          <div class="category-grid">
+            <div class="category-item">
+              <div class="icon-container">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <span>Mathematics</span>
+            </div>
+            <div class="category-item">
+              <div class="icon-container">
+                <i class="fas fa-flask"></i>
+              </div>
+              <span>Science</span>
+            </div>
+            <div class="category-item">
+              <div class="icon-container">
+                <i class="fas fa-book"></i>
+              </div>
+              <span>Literature</span>
+            </div>
+            <div class="category-item">
+              <div class="icon-container">
+                <i class="fas fa-globe"></i>
+              </div>
+              <span>History</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="doctors-list">
+          <h3>Your Subjects</h3>
+          <div class="subjects-container">
+            <div class="subject-card">
+              <div class="subject-icon">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <div class="subject-info">
+                <h4>Mathematics</h4>
+                <p>Advanced Calculus</p>
+                <div class="progress-info">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                  </div>
+                  <span>75% Complete</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div class="subject-info">
+                <h4>Science</h4>
+                <p>Physics & Chemistry</p>
+                <div class="progress-info">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 60%"></div>
+                  </div>
+                  <span>60% Complete</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="subject-info">
+                <h4>Literature</h4>
+                <p>Modern Classics</p>
+                <div class="progress-info">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                  <span>85% Complete</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="subject-info">
+                <h4>History</h4>
+                <p>World History</p>
+                <div class="progress-info">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 45%"></div>
+                  </div>
+                  <span>45% Complete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav">
+        <div
+          class="nav-item active"
+          onclick="window.location.href='index.html'"
+        >
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='schedule.html'">
+          <i class="fas fa-calendar"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Progress</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-book-open"></i>
+          <span>Notes</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-users"></i>
+          <span>Students</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </div>
+      </nav>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Medical App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <main class="login-container">
+        <div class="login-form" id="loginForm">
+          <h2>Login</h2>
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" />
+          </div>
+          <button class="login-btn">Login</button>
+          <p class="error-message" id="errorMessage"></p>
+        </div>
+
+        <div class="profile-content hidden" id="profileContent">
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h2>Welcome, Deep</h2>
+          </div>
+          <div class="profile-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>deep@example.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span>+1 234 567 8900</span>
+            </div>
+          </div>
+          <button class="logout-btn">Logout</button>
+        </div>
+      </main>
+
+      <nav class="bottom-nav">
+        <div class="nav-item">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-calendar"></i>
+          <span>Schedule</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-message"></i>
+          <span>Messages</span>
+        </div>
+        <div class="nav-item active">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </div>
+      </nav>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>
