@@ -1,0 +1,13 @@
+medical-app/
+  ├── index.html
+  ├── css/
+  │   └── style.css
+  ├── js/
+  │   ├── main.js
+  │   ├── calendar.js
+  │   ├── notes.js
+  │   └── profile.js
+  ├── tasks.html        # renamed from schedule.html
+  ├── notes.html        # renamed from messages.html
+  └── profile.html
+  └── images/ 

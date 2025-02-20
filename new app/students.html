@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Records - Student Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="page-header">
+        <div class="back-button" onclick="window.history.back()">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <h1>Student Records</h1>
+        <button class="add-student-btn">
+          <i class="fas fa-plus"></i>
+          <span>Add Student</span>
+        </button>
+        <div class="search-filter">
+          <input
+            type="text"
+            id="searchStudent"
+            placeholder="Search students..."
+          />
+          <select id="filterSubject">
+            <option value="all">All Subjects</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="literature">Literature</option>
+            <option value="history">History</option>
+          </select>
+        </div>
+      </header>
+
+      <main>
+        <div class="students-grid">
+          <!-- Student cards will be populated here -->
+        </div>
+      </main>
+
+      <nav class="bottom-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='schedule.html'">
+          <i class="fas fa-calendar"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='progress.html'">
+          <i class="fas fa-chart-line"></i>
+          <span>Progress</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='notes.html'">
+          <i class="fas fa-book-open"></i>
+          <span>Notes</span>
+        </div>
+        <div
+          class="nav-item active"
+          onclick="window.location.href='students.html'"
+        >
+          <i class="fas fa-users"></i>
+          <span>Students</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='profile.html'">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </div>
+      </nav>
+    </div>
+    <script src="js/students.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

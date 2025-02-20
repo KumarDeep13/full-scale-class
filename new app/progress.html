@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress - Student Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="category-header">
+        <h1>Progress Overview</h1>
+      </header>
+
+      <main>
+        <div class="progress-stats">
+          <div class="stat-card">
+            <h3>Overall Progress</h3>
+            <div class="stat-value">78%</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 78%"></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <h3>Completed Tasks</h3>
+            <div class="stat-value">45/60</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-charts">
+          <div class="chart-container">
+            <h3>Subject Performance</h3>
+            <canvas id="subjectChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <h3>Monthly Progress</h3>
+            <canvas id="progressChart"></canvas>
+          </div>
+        </div>
+
+        <div class="subjects-container">
+          <div class="subject-card">
+            <div class="subject-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="subject-info">
+              <h4>Mathematics</h4>
+              <p>Advanced Calculus</p>
+              <div class="progress-info">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 75%"></div>
+                </div>
+                <span>75% Complete</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <div class="subject-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="subject-info">
+              <h4>Science</h4>
+              <p>Physics & Chemistry</p>
+              <div class="progress-info">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 60%"></div>
+                </div>
+                <span>60% Complete</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <nav class="bottom-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='schedule.html'">
+          <i class="fas fa-calendar"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="nav-item active">
+          <i class="fas fa-chart-line"></i>
+          <span>Progress</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-book-open"></i>
+          <span>Notes</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-users"></i>
+          <span>Students</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </div>
+      </nav>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/progress.js"></script>
+  </body>
+</html>
